@@ -1,0 +1,59 @@
+<?php
+/**
+ * @file
+ * Hook implementations for REST UI module.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function restui_menu() {
+  $items['admin/structure/rest'] = array(
+    'title' => 'REST',
+    'description' => "Manage your site's REST resources.",
+    'route_name' => 'restui.list',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function restui_permission() {
+  return array(
+    'administer rest resources' => array(
+      'title' => t('Administer REST resources'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function restui_theme() {
+  return array(
+    // list resources.
+    'restui_resource_info' => array(
+      'variables' => array('resource' => array()),
+      'template' => 'restui-resource-info',
+    ),
+  );
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Sets defaults for authentication and formats per HTTP method.
+ */
+function restui_preprocess_restui_resource_info(&$variables) {
+  $formats = \Drupal::getContainer()->getParameter('serializer.formats');
+  $authentication_providers = array_keys(\Drupal::service('authentication')->getSortedProviders());
+  foreach ($variables['resource'] as $method => $properties) {
+    if (empty($properties['supported_formats'])) {
+      $variables['resource'][$method]['supported_formats'] = $formats;
+    }
+    if (empty($properties['supported_auth'])) {
+      $variables['resource'][$method]['supported_auth'] = $authentication_providers;
+    }
+  }
+}

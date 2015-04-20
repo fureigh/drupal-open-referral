@@ -1,0 +1,4 @@
+services:
+  restui.manager:
+    class: Drupal\restui\RestUIManager
+    arguments: ['@entity.manager']
