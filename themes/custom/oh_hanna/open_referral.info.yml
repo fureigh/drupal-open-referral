@@ -1,12 +1,12 @@
-name: Oh Hanna
+name: Open Referral
 type: theme
-description: This is a sub theme of Classy
+description: A subtheme of Classy built for the Drupal Open Referral project.
 core: 8.x
 # Defines the base theme
 base theme: classy
 # Defines libraries group in which we can add css/js.
 libraries:
-  - oh_hanna/global-styling
+  - open_referral/global-styling
 # Regions
 regions:
   header: Header
