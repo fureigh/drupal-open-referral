@@ -1,0 +1,5 @@
+type: module
+name: References dialog
+description: Enhances references fields by adding dialogs for adding and creating entities.
+core: '8.x'
+version: '8.x-1.x-dev'

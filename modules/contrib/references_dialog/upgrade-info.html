@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,700,600' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+    <!--
+
+body {
+  width: 80%;
+  color: #343434;
+  margin: 1em auto;
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+details {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 2em;
+}
+
+details summary {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+details.error summary {
+  background-color: #ffd5d5;
+}
+
+details.warning summary {
+  background-color: #fff3bb;
+}
+
+a {
+  color: #095cb1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+aside {
+  font-style: italic;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.group {
+  border: 1px solid #ececec;
+  padding: 1em;
+}
+
+.group > summary {
+  padding: 0;
+  color: #c8c8c8;
+  margin-bottom: 0;;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.group[open] > summary {
+  margin-bottom: 1em;
+}
+
+.group > details:last-child {
+  margin-bottom: 0;
+}
+
+    -->
+    </style>
+  </head>
+  <body>
+      <details open="true" class="group">
+      <summary>Caching</summary>
+          <details class="error">
+      <summary>The caching system has been rewritten.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1884796">Drupal 8 Cache API</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/1272696">New cache API</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 108</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:cache_get</aside>    </details>
+    <details class="error">
+      <summary>The caching system has been rewritten.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1884796">Drupal 8 Cache API</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/1272696">New cache API</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 128</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:cache_set</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Configuration</summary>
+          <details class="error">
+      <summary><code>variable_get()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2183531">The Variable API has been removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 68</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:variable_get</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Entity API</summary>
+          <details class="error">
+      <summary><code>entity_get_info()</code> is now a method of the EntityManager service.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1929006"><code>entity_get_info()</code> is deprecated</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 49</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 61</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 232</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 308</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 426</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 460</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 587</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:entity_get_info</aside>    </details>
+    <details class="error">
+      <summary><code>entity_load()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2266845">Entities are now classed objects implementing <code>EntityInterface</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 214</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 207</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 585</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:entity_load</aside>    </details>
+    <details class="error">
+      <summary><code>entity_label()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2266845">Entities are now classed objects implementing <code>EntityInterface</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 218</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 589</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:entity_label</aside>    </details>
+    <details class="error">
+      <summary><code>node_load()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2266845">Entities are now classed objects implementing <code>EntityInterface</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 93</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:node_load</aside>    </details>
+    <details class="error">
+      <summary><code>user_load()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2266845">Entities are now classed objects implementing <code>EntityInterface</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 164</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:user_load</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Field API</summary>
+          <details class="error">
+      <summary>The Field API CRUD functions have been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2012896">Fields and field instances are now entities</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 181</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:field_info_fields</aside>    </details>
+    <details class="error">
+      <summary><code>field_info_widget_types()</code> is now a method of <code>WidgetInterface</code>.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1796000">Field widgets are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 182</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:field_info_widget_types</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Info File</summary>
+          <details class="error">
+      <summary>Module info files' <code>core</code> key must have a value of <code>8.x</code>.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1935708"><code>.info</code> files are now <code>.info.yml</code> files</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.info</li>
+            </ul>
+      
+      <aside>Flagged by info</aside>    </details>
+    <details class="error">
+      <summary>Info files must contain a <code>type</code> key.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1935708#type"><code>.info</code> files are now <code>.info.yml</code> files</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.info</li>
+            </ul>
+      
+      <aside>Flagged by info</aside>    </details>
+    <details class="error">
+      <summary>Many common dependencies have moved into core.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1935708"><code>.info</code> files are now <code>.info.yml</code> files</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.info</li>
+            </ul>
+      
+      <aside>Flagged by info</aside>    </details>
+    <details class="error">
+      <summary>Modules no longer declare classes in their info file.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1935708#files"><code>.info</code> files are now <code>.info.yml</code> files</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.info</li>
+            </ul>
+      
+      <aside>Flagged by info</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Menu/Routing</summary>
+          <details class="error">
+      <summary><code>current_path()</code> has been replaced by the <current> route.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2382211"><code>current_path()</code> replaced by the <current> route</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 530</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:current_path</aside>    </details>
+    <details class="error">
+      <summary><code>hook_menu()</code> has been removed from Drupal 8.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1800686">All functionality of <code>hook_menu()</code> replaced</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2177901">Dynamic routes are now defined in <code>MODULE.routing.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2119699">Page callbacks have been converted to controller classes</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2089605">Route naming convention</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2165243">Contextual links are now plugins defined in <code>MODULE.links.contextual.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2007444">Local actions are now plugins defined in <code>MODULE.links.action.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2044515">Local tasks and now plugins defined in <code>MODULE.links.task.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2228089">Menu links are now defined in <code>MODULE.links.menu.yml</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 45</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:menu</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Miscellaneous</summary>
+          <details class="error">
+      <summary>Classes must be PSR-4 compliant.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2246699">PSR-4 compatible class loader in Drupal core</a></li>
+              </ul>
+      
+      
+          </details>
+    <details class="warning">
+      <summary>Many common functions, shared variables, and constants have been renamed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2324935">The global theme variables have been replaced by an ActiveTheme object</a></li>
+              </ul>
+      
+      
+          </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Rendering</summary>
+          <details class="error">
+      <summary><code>drupal_add_css()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2169605"><code>drupal_add_css()</code> removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 445</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:drupal_add_css</aside>    </details>
+    <details class="error">
+      <summary><code>drupal_add_js()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2169605"><code>drupal_add_js()</code> removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 222</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 223</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 593</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 594</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:drupal_add_js</aside>    </details>
+    <details class="error">
+      <summary><code>hook_page_alter()</code> is deprecated and may only be used to alter #attached assets.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2357755">hook_page_alter() deprecated</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 510</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:page_alter</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>System</summary>
+          <details class="error">
+      <summary><code>drupal_set_title()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2067859"><code>drupal_set_title()</code> removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 189</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:drupal_set_title</aside>    </details>
+    <details class="error">
+      <summary><code>module_invoke()</code> is now a method of the <code>module_handler</code> service.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1894902"><code>module_invoke()</code> replaced by <code>module_handler</code> service</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 442</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:module_invoke</aside>    </details>
+    <details class="error">
+      <summary><code>module_invoke_all()</code> is now a method of the <code>module_handler</code> service.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1894902"><code>module_invoke_all()</code> replaced by <code>module_handler</code> service</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 156</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 173</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 232</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 665</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:module_invoke_all</aside>    </details>
+    <details class="error">
+      <summary><code>url()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2346779"><code>url()</code> replaced by URL generation API</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 361</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:url</aside>    </details>
+    <details class="error">
+      <summary><code>user_access()</code> is now <code>AccountInterface::hasPermission()</code>.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2049309"><code>user_access()</code> got converted to a method on the user/account interface</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 165</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 166</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.dialog_widgets.inc, line 186</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:user_access</aside>    </details>
+    <details class="error">
+      <summary><code>hook_init()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2013014"><code>hook_init()</code> removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 436</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:init</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Theme System</summary>
+          <details class="error">
+      <summary><code>theme()</code> has been renamed to <code>_theme()</code>, and should never be called directly.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2195739"><code>theme()</code> renamed to <code>_theme()</code> and should not be called directly</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/views/references_dialog_plugin_display.inc, line 203</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 324</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 344</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 397</li>
+              <li>/var/www/html/d8/drupal/modules/references_dialog/references_dialog.module, line 695</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:theme</aside>    </details>
+
+    </details>
+    </body>
+</html>
